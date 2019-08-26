@@ -1,2 +1,2 @@
 # comment.vim
-Plugin for Vim editor
+File-type sensible comments plugin for Vim editor.
