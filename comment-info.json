@@ -1,0 +1,12 @@
+{
+    "name" : "comment",
+    "version" : "1.0",
+    "author" : "MyRequiem <mrvladislavovich@gmail.com>",
+    "maintainer" : "MyRequiem <mrvladislavovich@gmail.com>",
+    "repository" : {
+        "type": "git",
+        "url": "git://github.com/MyRequiem/comment.vim"
+    },
+    "dependencies" : {},
+    "description" : "comment -- File-type sensible comments"
+}

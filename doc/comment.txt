@@ -1,0 +1,117 @@
+*comment.txt* File-type sensible comments
+
+							    __	~
+		 _________  ____ ___  ____ ___  ___  ____  / /_	~
+		/ ___/ __ \/ __ `__ \/ __ `__ \/ _ \/ __ \/ __/	~
+	       / /__/ /_/ / / / / / / / / / / /  __/ / / / /_	~
+	       \___/\____/_/ /_/ /_/_/ /_/ /_/\___/_/ /_/\__/	~
+
+			  File-type sensible comments	~
+		     Version: 1.0 Last change: 26.08.19 ~
+
+			      Reference Manual~
+==============================================================================
+CONTENTS						    *comment-contents*
+
+	1.Introduction .......................... |comment-introduction|
+	2.Usage ................................. |comment-usage|
+	3.Configuation .......................... |comment-configuation|
+		3.1.Enable/disable plugin ....... |g:loaded_comment|
+		3.2.Hotkeys ..................... |g:comment_hotkey|
+						  |g:comment_hotkey_manually|
+		3.3.Comment blank lines ......... |g:comment_blank_lines|
+		3.4.Comment default chars ....... |g:comment_default_chars|
+		3.5.Comment <filetype> chars .... |g:comment_<filetype>_chars|
+	4.Mappings .............................. |comment-mappings|
+	5.Changelog ............................. |comment-changelog|
+	6.Contributions ......................... |comment-contributions|
+	7.License ............................... |comment-license|
+	8.About ................................. |comment-about|
+
+==============================================================================
+INTRODUCTION						*comment-introduction*
+	Commenting/uncommenting lines of source code. Comment characters
+	are automatically determined by 'filetype'. Plugin also allows
+	you to enter comment symbols from keyboard or change the default
+	characters for certain file types in your |vimrc|
+	(see |g:comment_<filetype>_chars|).
+==============================================================================
+USAGE							       *comment-usage*
+	|Normal-mode| and |Visual-mode|:
+		`gcc`	- commenting/uncommenting string(s)
+		`gC`	- enter comment character(s) manually. Comment
+			   line format is the same as the 'commentstring'
+			   variable. This variable is only available if
+			   Vim is compiled with the |+folding| feature.
+
+	To change hotkeys, see |g:comment_hotkey| and
+	|g:comment_hotkey_manually|
+==============================================================================
+CONFIGUATION						*comment-configuation*
+
+	   You can specify any options listed below in your |vimrc|
+------------------------------------------------------------------------------
+|g:loaded_comment| (default: 0)				    *g:loaded_comment*
+	To disable the plugin set this variable to 1 >
+		let g:loaded_comment = 1
+<
+------------------------------------------------------------------------------
+|g:comment_hotkey|	  (default: gcc)		    *g:comment_hotkey*
+|g:comment_hotkey_manually| (default: gC)	   *g:comment_hotkey_manually*
+	Hotkeys for commenting/uncommenting and for entering comment
+	characters manually: >
+		let g:comment_hotkey          = 'gcc'
+		let g:comment_hotkey_manually = 'gC'
+<
+------------------------------------------------------------------------------
+|g:comment_blank_lines| (default: 1)		       *g:comment_blank_lines*
+	Comment or not empty lines: >
+		let g:comment_blank_lines = 1
+<
+------------------------------------------------------------------------------
+|g:comment_default_chars| (default: /* %s */)	     *g:comment_default_chars*
+	if comment characters are not found for the 'filetype', then the
+	default characters will be used: >
+		let g:comment_default_chars = '" %s'
+		let g:comment_default_chars = '# %s'
+<
+------------------------------------------------------------------------------
+|g:comment_<filetype>_chars|			  *g:comment_<filetype>_chars*
+	Overriding default comment characters for a specific 'filetype'.
+	If 'filetype' is composite (for example: c.doxygen), then the
+	dots are replaced with underscores. The following lines set
+	comment characters for filetypes `asm` and `c.doxygen`: >
+		let g:comment_asm_chars       = '# %s'
+		let g:comment_c_doxygen_chars = '/**< %s */'
+<
+==============================================================================
+MAPPINGS						    *comment-mappings*
+	|Normal-mode| and |Visual-mode|:
+		`gcc`	- commenting/uncommenting string(s)
+		`gC`	- enter comment character(s) manually
+
+	To change a keyboard shortcut, see |g:comment_hotkey| and
+	|g:comment_hotkey_manually|
+==============================================================================
+CHANGELOG						   *comment-changelog*
+`https://raw.githubusercontent.com/MyRequiem/comment.vim/master/ChangeLog.txt`
+
+==============================================================================
+CONTRIBUTIONS					       *comment-contributions*
+	Contributions and pull requests are welcome
+		`https://github.com/MyRequiem/comment.vim`
+
+==============================================================================
+LICENSE							     *comment-license*
+    MIT License:
+    `https://raw.githubusercontent.com/MyRequiem/comment.vim/master/LICENSE`
+
+==============================================================================
+ABOUT							       *comment-about*
+	Author: MyRequiem <mrvladislavovich@gmail.com>
+
+	Find the latest version of `comment.vim` at:
+		`https://github.com/MyRequiem/comment.vim`
+
+==============================================================================
+vim:tw=78:ts=8:sw=8:ft=help:norl:noet:

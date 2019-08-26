@@ -14,11 +14,17 @@ endif
 
 let g:loaded_comment = 1
 
-let g:comment_blank_lines = get(g:, 'comment_blank_lines', 1)
-let g:comment_default_chars = get(g:, 'comment_default_chars', '/*%s*/')
+let g:comment_blank_lines     = get(g:, 'comment_blank_lines', 1)
+let g:comment_hotkey          = get(g:, 'comment_hotkey', 'gcc')
+let g:comment_hotkey_manually = get(g:, 'comment_hotkey_manually', 'gC')
+let g:comment_default_chars   = get(g:, 'comment_default_chars', '/* %s */')
 
-nnoremap <silent>gc :call comment#CommentLines()<cr>
-vnoremap <silent>gc :call comment#CommentLines()<cr>
+execute 'nnoremap <silent>' . g:comment_hotkey .
+    \ ' :call comment#CommentLines(0)<cr>'
+execute 'vnoremap <silent>' . g:comment_hotkey .
+    \ ' :call comment#CommentLines(0)<cr>'
 
-nnoremap <silent>gC :call comment#CommentLines(1)<cr>
-vnoremap <silent>gC :call comment#CommentLines(1)<cr>
+execute 'nnoremap <silent>' . g:comment_hotkey_manually .
+    \ ' :call comment#CommentLines(1)<cr>'
+execute 'vnoremap <silent>' . g:comment_hotkey_manually .
+    \ ' :call comment#CommentLines(1)<cr>'

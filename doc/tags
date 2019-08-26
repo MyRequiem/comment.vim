@@ -1,0 +1,16 @@
+comment-about	comment.txt	/*comment-about*
+comment-changelog	comment.txt	/*comment-changelog*
+comment-configuation	comment.txt	/*comment-configuation*
+comment-contents	comment.txt	/*comment-contents*
+comment-contributions	comment.txt	/*comment-contributions*
+comment-introduction	comment.txt	/*comment-introduction*
+comment-license	comment.txt	/*comment-license*
+comment-mappings	comment.txt	/*comment-mappings*
+comment-usage	comment.txt	/*comment-usage*
+comment.txt	comment.txt	/*comment.txt*
+g:comment_<filetype>_chars	comment.txt	/*g:comment_<filetype>_chars*
+g:comment_blank_lines	comment.txt	/*g:comment_blank_lines*
+g:comment_default_chars	comment.txt	/*g:comment_default_chars*
+g:comment_hotkey	comment.txt	/*g:comment_hotkey*
+g:comment_hotkey_manually	comment.txt	/*g:comment_hotkey_manually*
+g:loaded_comment	comment.txt	/*g:loaded_comment*
