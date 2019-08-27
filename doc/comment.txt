@@ -1,4 +1,4 @@
-*comment.txt* File-type sensible comments	      Last change: 2019 Aug 26
+*comment.txt*		    For Vim version 8.1.      Last change: 2019 Aug 26
 
 							    __	~
 		 _________  ____ ___  ____ ___  ___  ____  / /_	~
