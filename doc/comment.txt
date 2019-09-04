@@ -15,7 +15,7 @@ CONTENTS						    *comment-contents*
 
 	1.Introduction .......................... |comment-introduction|
 	2.Usage ................................. |comment-usage|
-	3.Configuation .......................... |comment-configuation|
+	3.Configuration ......................... |comment-configuration|
 		3.1.Enable/disable plugin ....... |g:loaded_comment|
 		3.2.Hotkeys ..................... |g:comment_hotkey|
 						  |g:comment_hotkey_manually|
@@ -47,7 +47,7 @@ USAGE							       *comment-usage*
 	To change hotkeys, see |g:comment_hotkey| and
 	|g:comment_hotkey_manually|
 ==============================================================================
-CONFIGUATION						*comment-configuation*
+CONFIGURATION					       *comment-configuration*
 
 	   You can specify any options listed below in your |vimrc|
 ------------------------------------------------------------------------------
